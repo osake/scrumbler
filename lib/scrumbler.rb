@@ -21,6 +21,7 @@ class Scrumbler
   private
 
   def word_scrumble(chunk)
+    return chunk if chunk =~ /\w'\w/
     word_single_quoted_start = false
     word_single_quoted_end = false
     word_double_quoted_start = false
